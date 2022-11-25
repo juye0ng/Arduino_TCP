@@ -1,0 +1,17 @@
+﻿<Window x:Class="Slave.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Slave"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <Grid>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Center" Margin="-228,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="32" FontSize="16"/>
+        <TextBox x:Name="log" HorizontalAlignment="Center" Margin="114,67,114,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="564" Height="126"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Center" Margin="456,30,263,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Height="32" Text="15000" FontSize="16"/>
+        <Button x:Name="Connect" Content="Connect" HorizontalAlignment="Center" Margin="500,30,0,0" VerticalAlignment="Top" Width="63" Height="32" Click="Connect_Click"/>
+        <ComboBox x:Name="comport" HorizontalAlignment="Left" Margin="576,213,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comport_SelectionChanged" ContextMenuOpening="comport_ContextMenuOpening" Height="36"/>
+        <Button x:Name="portconnect" Content="연결" HorizontalAlignment="Left" Margin="714,213,0,0" VerticalAlignment="Top" Width="64" Click="portconnect_Click" Height="36"/>
+    </Grid>
+</Window>
